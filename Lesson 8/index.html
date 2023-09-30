@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8</title>
+    <!-- Link to install Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- How to creat custom classes in Bootstrap -->
+    <style>
+        .h-10 {
+            height: 10rem
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Text aligned to the center and with some top margin. -->
+    <h1 class="text-center my-4">Reordering and Offsetting Columns</h1>
+    <div class="container">
+        <div class="row bg-info h-10 mb-3">
+            <!-- With the 'order' class, we can reorder the columns at our whim if we numerate them. For example, if in this first column we type order-4, it would be the fourth instead of the first. -->
+            <div class="col-md-3 order-4">
+                <p class="bg-primary text-white text-center my-3 p-3">
+                    1st Column
+                </p>
+            </div>
+            <div class="col-md-3 order-3">
+                <p class="bg-primary text-white text-center my-3 p-3">
+                    2nd Column
+                </p>
+            </div>
+            <div class="col-md-3 order-2">
+                <p class="bg-primary text-white text-center my-3 p-3">
+                    3rd Column
+                </p>
+            </div>
+            <div class="col-md-3 order-1">
+                <p class="bg-primary text-white text-center my-3 p-3">
+                    4th Column
+                </p>
+            </div>
+        </div>
+
+        <!-- In the following row, we will proceed to create an offset to skip empty column gaps that do not exist. -->
+
+        <div class="row bg-info h-10">
+            <div class="col-md-3">
+                <p class="bg-primary text-white text-center my-3 p-3">
+                    1st Column
+                </p>
+            </div>
+            <!-- With the offset-6 property (we add md to follow the responsive flow), we can make our column skip two col-md-3 gaps. -->
+            <div class="col-md-3 offset-md-6">
+                <p class="bg-primary text-white text-center my-3 p-3">
+                    2nd Column
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Useful CDNs for Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
