@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7</title>
+    <!-- Link to install Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- How to creat custom classes in Bootstrap -->
+    <style>
+        .h-10 {
+            height: 10rem
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Text aligned to the center and with some top margin. -->
+    <h1 class="text-center my-4">Column Wrapping and Column Breaks</h1>
+    <div class="container">
+        <!-- We create a row with 9/12 and 4/12 -->
+        <div class="row">
+            <div class="col-9">
+                <p class="bg-primary text-white text-center mb-3 p-3">
+                    9 Column Width
+                </p>
+            </div>
+            <div class="col-4">
+                <p class="bg-primary text-white text-center mb-3 p-3">
+                    4 Column Width
+                </p>
+            </div>
+        </div>
+     
+        <!-- Next row would be 4 columns in the same row. -->
+        <!-- But we can do a trick to wrap the 4 columns on the same row into 2 rows adding <div class="w-100"></div> in the middle of 2 columns (line 50). -->
+
+        <div class="row">
+            <div class="col-md-3">
+                <p class="bg-primary text-white text-center mb-3 p-3">
+                    Columns
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p class="bg-primary text-white text-center mb-3 p-3">
+                    Columns
+                </p>
+            </div>
+
+            <!-- This is the line we add to wrap the 4 columns on the same row to 2 rows of 2 columns without creating them. -->
+            <div class="w-100"></div>
+
+            <div class="col-md-3">
+                <p class="bg-primary text-white text-center mb-3 p-3">
+                    Columns
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p class="bg-primary text-white text-center mb-3 p-3">
+                    Columns
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Useful CDNs for Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
