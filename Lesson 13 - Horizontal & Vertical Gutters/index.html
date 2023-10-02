@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 13</title>
+    <!-- Link to install Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- How to create custom classes in Bootstrap -->
+    <style>
+        .h-10 {
+            height: 10rem
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Text aligned to the center and with some top margin. -->
+    <h1 class="text-center my-4">Horizontal & Vertical Gutters</h1>
+    <!-- We could add px-4 to contain the children containers into the parent element to avoid the overflow. -->
+    <!-- Instead of adding padding, we are going to use overflow-hidden, a much better practise to contain elements without adding spaces. -->
+    <div class="container bg-info overflow-hidden">
+        <!-- We have to delete h-10 to see the objects overflowing the parent element. -->
+        <!-- Gutters can be applied responsively. We can use for example g-md-5 or g-sm-3 to apply it on our favorite breakpoints. -->
+        <div class="row bg-warning mb-3 g-md-5 g-sm-3">
+            <div class="col-6">
+                <p class="bg-primary text-white text-center p-3">Columns</p>
+            </div>
+            <div class="col-6">
+                <p class="bg-primary text-white text-center p-3">Columns</p>
+            </div>
+            <div class="col-6">
+                <p class="bg-primary text-white text-center p-3 mb-0">Columns</p>
+            </div>
+            <div class="col-6">
+                <p class="bg-primary text-white text-center p-3 mb-0">Columns</p>
+            </div>
+        </div>
+    </div>
+    <!-- Useful CDNs for Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
